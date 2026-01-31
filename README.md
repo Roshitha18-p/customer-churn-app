@@ -60,12 +60,12 @@ The project demonstrates an **end-to-end Data Science workflow**, including:
 ## **Folder Structure**
 customer-churn-app/
 │
-├── app.py # Streamlit app
-├── model.pkl # Trained model
-├── scaler.pkl # Scaler for numeric features
-├── features.pkl # Feature column names
+├── app.py           # Streamlit app
+├── model.pkl        # Trained model
+├── scaler.pkl       # Scaler for numeric features
+├── features.pkl     # Feature column names
 ├── requirements.txt # Required Python libraries
-└── README.md # Project documentation
+└── README.md        # Project documentation
 
 ## Run the Code**
 **Deploy on Streamlit Cloud:**
