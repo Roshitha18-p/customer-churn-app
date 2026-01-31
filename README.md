@@ -1,53 +1,64 @@
-# Customer Churn Prediction App
+ Customer Churn Prediction App
+ 
+## **Project Overview**
+This is a **student project** to predict whether a customer is likely to leave (churn) a subscription-based service such as a telecom company.  
 
-## Overview
-This project is a **Customer Churn Prediction app** built using **Python, Scikit-learn, and Streamlit**.  
-The app predicts whether a customer is likely to **leave (churn)** a subscription-based service, such as a telecom company. It also shows the **probability of churn** based on the customer’s details.
-
-The project demonstrates the full **data science workflow**:
-- Data cleaning
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Model building and evaluation
-- Deployment using Streamlit
-
----
-
-## Dataset
-We used the **Telco Customer Churn Dataset** (available on Kaggle / IBM).  
-It includes customer information such as:
-- Tenure
-- Monthly charges
-- Total charges
-- Contract type
-- Other demographic and service features
+The project demonstrates an **end-to-end Data Science workflow**, including:  
+- Data cleaning & preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Feature engineering  
+- Model building and evaluation  
+- Deployment using **Streamlit** for interactive predictions  
 
 ---
 
-## How It Works
+## **Key Features**
+- Predict **Churn** (Yes / No) based on customer details  
+- Shows **Churn Probability** (0–1)  
+- Displays **Top Factors** influencing customer churn (feature importance)  
+- User-friendly **interactive Streamlit interface**  
 
-1. **Data Cleaning & Preprocessing**
-   - Handle missing values
-   - Convert categorical features into numeric (one-hot encoding)
-   - Scale numeric features
+---
 
-2. **Model**
-   - Logistic Regression is used to predict churn
-   - Trained using 80% of the data (train set)
-   - Tested on 20% of the data (test set)
-   - Model performance is evaluated using accuracy and classification report
+## **Dataset**
+- **Source:** [Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)  
+- **Rows:** 7,043 | **Columns:** 21  
+- **Key Features:**  
+  - Tenure  
+  - Monthly Charges  
+  - Total Charges  
+  - Contract Type  
+  - Services & Demographics  
+- **Target:** `Churn` (Yes = 1 / No = 0)  
 
-3. **Streamlit App**
-   - User enters customer details:
-     - Tenure
-     - Monthly charges
-     - Total charges
-   - App outputs:
-     - **Churn prediction** (Yes / No)
-     - **Churn probability** (0–1)
-ill
+## **Project Workflow**
 
-## Folder Structure
+### 1. Data Cleaning
+- Converted `TotalCharges` to numeric  
+- Filled missing values with median  
+- Dropped `customerID` column  
+- Encoded categorical variables using **one-hot encoding**  
+
+### 2. Exploratory Data Analysis (EDA)
+- Checked distribution of churn  
+- Visualized relationship between tenure, monthly charges, and churn  
+
+### 3. Feature Engineering
+- Scaled numeric features using `StandardScaler`  
+- Prepared train-test split (80% / 20%)  
+
+### 4. Model
+- **Algorithm:** Logistic Regression  
+- **Accuracy:** 82%  
+- Evaluated with **Confusion Matrix**, **Classification Report**  
+
+### 5. Streamlit App
+- Input customer details: tenure, monthly charges, total charges  
+- Output: churn prediction, probability, top factors influencing churn  
+
+---
+
+## **Folder Structure**
 customer-churn-app/
 │
 ├── app.py # Streamlit app
@@ -55,30 +66,30 @@ customer-churn-app/
 ├── scaler.pkl # Scaler for numeric features
 ├── features.pkl # Feature column names
 ├── requirements.txt # Required Python libraries
-└── README.md # This file
+└── README.md # Project documentation
 
-## How to Run
- Streamlit Cloud
-1. Go to [Streamlit Cloud](https://streamlit.io/cloud)
-2. Sign in with GitHub
-3. Deploy the repository with `app.py` as the main file
-4. Open the provided URL and use the app (https://roshitha18-p-customer-churn-app-app1-jjq2ru.streamlit.app)
+### 6.run the code
+-Deploy on Streamlit Cloud
+-Push all files to GitHub
+-Go to Streamlit Cloud
+   -> New App
+   ->Select your repository, branch, and app.py as main file
+   =>Click Deploy → your app is live
 
-## Tech Stack
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Streamlit
-- Matplotlib, Seaborn
+## 7.Insights from Model
+-Customers with month-to-month contracts or high monthly charges are more likely to churn
+-Long tenure and loyalty services reduce churn probability
+-Feature importance helps identify reasons behind churn
 
-## Key Learnings
-- Full **ML pipeline** from raw data to deployed app
-- Handling **categorical & numeric data**
-- Building and evaluating a **classification model**
-- Deploying a **real-time web app** using Streamlit
+## Learning Outcomes
+Practiced full Data Science workflow
+Built a Logistic Regression model from scratch
+Learned to deploy ML models with Streamlit
+Gained experience in EDA, feature engineering, and model evaluation
 
-## Future Improvements
-- Add more **interactive charts** in the app
-- Include **feature importance** explanations for each prediction
-- Experiment with other models (Decision Tree, Random Forest)
-- Add **user authentication** for enterprise use
+## Technologies Used
+Python
+Pandas, NumPy
+Scikit-learn
+Matplotlib, Seaborn
+Streamlit
