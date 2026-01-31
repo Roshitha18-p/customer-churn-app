@@ -61,34 +61,35 @@ The project demonstrates an **end-to-end Data Science workflow**, including:
 customer-churn-app/
 │
 ├── app.py # Streamlit app
-   ├── model.pkl # Trained model
-   ├── scaler.pkl # Scaler for numeric features
-   ├── features.pkl # Feature column names
+├── model.pkl # Trained model
+├── scaler.pkl # Scaler for numeric features
+├── features.pkl # Feature column names
 ├── requirements.txt # Required Python libraries
 └── README.md # Project documentation
 
-### 6.run the code
--Deploy on Streamlit Cloud
--Push all files to GitHub
--Go to Streamlit Cloud
-   -> New App
-   ->Select your repository, branch, and app.py as main file
-   =>Click Deploy → your app is live
+## Run the Code**
+**Deploy on Streamlit Cloud:**
+- Push all files to GitHub  
+- Go to [Streamlit Cloud](https://share.streamlit.io/)  
+  - Click **New App**  
+  - Select your repository, branch, and `app.py` as main file  
+  - Click **Deploy** → your app is live  
 
-## 7.Insights from Model
--Customers with month-to-month contracts or high monthly charges are more likely to churn
--Long tenure and loyalty services reduce churn probability
--Feature importance helps identify reasons behind churn
+## ** Insights from Model**
+- Customers with **month-to-month contracts** or **high monthly charges** are more likely to churn  
+- **Long tenure** and **loyalty services** reduce churn probability  
+- Feature importance helps **identify reasons behind churn**  
 
-## Learning Outcomes
-Practiced full Data Science workflow
-Built a Logistic Regression model from scratch
-Learned to deploy ML models with Streamlit
-Gained experience in EDA, feature engineering, and model evaluation
+## **Learning Outcomes**
+- Practiced full **Data Science workflow**  
+- Built a **Logistic Regression model** from scratch  
+- Learned to **deploy ML models with Streamlit**  
+- Gained experience in **EDA, feature engineering, and model evaluation**  
 
-## Technologies Used
-Python
-Pandas, NumPy
-Scikit-learn
-Matplotlib, Seaborn
-Streamlit
+## **Technologies Used**
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib, Seaborn  
+- Streamlit
+
