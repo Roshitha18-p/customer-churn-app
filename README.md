@@ -45,8 +45,7 @@ It includes customer information such as:
    - App outputs:
      - **Churn prediction** (Yes / No)
      - **Churn probability** (0–1)
-
----
+ill
 
 ## Folder Structure
 customer-churn-app/
@@ -59,9 +58,27 @@ customer-churn-app/
 └── README.md # This file
 
 ## How to Run
-
-### Option 1: Streamlit Cloud (Recommended)
+ Streamlit Cloud
 1. Go to [Streamlit Cloud](https://streamlit.io/cloud)
 2. Sign in with GitHub
 3. Deploy the repository with `app.py` as the main file
 4. Open the provided URL and use the app (https://roshitha18-p-customer-churn-app-app1-jjq2ru.streamlit.app)
+
+## Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Streamlit
+- Matplotlib, Seaborn
+
+## Key Learnings
+- Full **ML pipeline** from raw data to deployed app
+- Handling **categorical & numeric data**
+- Building and evaluating a **classification model**
+- Deploying a **real-time web app** using Streamlit
+
+## Future Improvements
+- Add more **interactive charts** in the app
+- Include **feature importance** explanations for each prediction
+- Experiment with other models (Decision Tree, Random Forest)
+- Add **user authentication** for enterprise use
