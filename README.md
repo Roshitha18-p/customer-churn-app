@@ -56,15 +56,14 @@ The project demonstrates an **end-to-end Data Science workflow**, including:
 - Input customer details: tenure, monthly charges, total charges  
 - Output: churn prediction, probability, top factors influencing churn  
 
----
 
 ## **Folder Structure**
 customer-churn-app/
 │
 ├── app.py # Streamlit app
-├── model.pkl # Trained model
-├── scaler.pkl # Scaler for numeric features
-├── features.pkl # Feature column names
+   ├── model.pkl # Trained model
+   ├── scaler.pkl # Scaler for numeric features
+   ├── features.pkl # Feature column names
 ├── requirements.txt # Required Python libraries
 └── README.md # Project documentation
 
